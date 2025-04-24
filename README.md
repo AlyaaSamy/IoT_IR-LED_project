@@ -47,7 +47,7 @@ This project allows you to control an LED and detect objects using an IR sensor 
      - `LED_OFF` → Turns LED off
 
 6. **IoT MQTT Panel App**  
-   - Add a **switch** that sends `LED_ON` or `LED_OFF` to `/sector/alaa/led`.
+   - Add a **switch** that sends `LED_ON` or `LED_OFF` to `/aliaa/led`.
    - Add a **LED widget** that listens to `/aliaa/ir` and lights up if `OBJECT_DETECTED` is received.
 
 ---
