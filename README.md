@@ -35,10 +35,10 @@ This project allows you to control an LED and detect objects using an IR sensor 
    Serial Monitor shows WiFi status, IP address, and MQTT events for debugging.
 
 3. **MQTT Broker Connection**  
-   The device connects to a public MQTT broker (`broker.emqx.io`) and subscribes to `/sector/alaa/led` for LED control.
+   The device connects to a public MQTT broker (`broker.emqx.io`) and subscribes to `/aliaa/led` for LED control.
 
 4. **Object Detection with IR**  
-   - Publishes `OBJECT_DETECTED` to `/sector/alaa/ir` if IR sensor detects something.
+   - Publishes `OBJECT_DETECTED` to `/aliaa/ir` if IR sensor detects something.
    - Publishes `NO_OBJECT_DETECTED` otherwise.
 
 5. **LED Control**  
@@ -48,7 +48,7 @@ This project allows you to control an LED and detect objects using an IR sensor 
 
 6. **IoT MQTT Panel App**  
    - Add a **switch** that sends `LED_ON` or `LED_OFF` to `/sector/alaa/led`.
-   - Add a **LED widget** that listens to `/sector/alaa/ir` and lights up if `OBJECT_DETECTED` is received.
+   - Add a **LED widget** that listens to `/aliaa/ir` and lights up if `OBJECT_DETECTED` is received.
 
 ---
 
