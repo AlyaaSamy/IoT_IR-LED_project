@@ -43,7 +43,7 @@ void setup() {
   client.setCallback(callback);
 
   // Connect to MQTT broker
-  while (!client.connect("AliaaID", NULL, NULL, "/will/topic", 1, true, "client: SectorB5_Aliaa is disconnected")) {
+  while (!client.connect("AliaaID", NULL, NULL, "/will/topic", 1, true, "client: AliaaID is disconnected")) {
     Serial.print("Connecting to MQTT Broker: ");
     Serial.println(broker);
     delay(500);
