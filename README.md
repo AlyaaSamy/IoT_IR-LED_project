@@ -72,10 +72,13 @@ Install via the Arduino Library Manager.
 
 ## 🔐 Notes
 
-- The broker used is public, so messages are not secure. For production, use secure connections and authentication.
+- The broker used is public, so messages are not secure. For production, use secure connections and authentication. You can use a private broker and mqtts for more security.
 - Modify `ssid` and `pass` in the code for your WiFi credentials.
-- I used `WiFi.mode(WIFI_STA);` in the setup() in my code because when I ran the code it kept stuck at `connecting to wifi..` and the wifi.status() result was the number 6 after searching I found this command and it helped establishh the connection successfully. You don't need it if your wifi.status() code didn't return 6. for more info about this here: https://forum.arduino.cc/t/serial-println-wifi-status-codes-meaning/486265
-- if you're using NodeMCU (ESP8266) the code still works but use `ESP8266WiFi.h` library instead of `WiFi.h`
+- When running the code, the connection was getting stuck at connecting to WiFi..., and WiFi.status() was returning the value 6.
+After some research, adding `WiFi.mode(WIFI_STA)`; in the setup() function resolved the issue by forcing the ESP to use Station mode.
+You may not need this line if your WiFi connection works without it. More information on WiFi status codes can be found here: https://forum.arduino.cc/t/serial-println-wifi-status-codes-meaning/486265
+- If your ESP device is unable to connect to your network, check your router for firewall rules or MAC address filtering that may be blocking the connection.
+- This code is compatible with `ESP8266` boards like the NodeMCU. However, you must replace `#include <WiFi.h>` with `#include <ESP8266WiFi.h>`.
 
 ---
 
