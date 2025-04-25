@@ -1,4 +1,4 @@
-# IR Infrared Obstacke Avoidance Sensor Monitoring and Led Control with ESP32 & MQTT
+# IR Infrared Obstacle Avoidance Sensor Monitoring and Led Control with ESP32 & MQTT
 
 ## 📡 Description
 
