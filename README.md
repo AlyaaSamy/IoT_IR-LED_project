@@ -1,4 +1,4 @@
-# ESP32 IR Sensor & LED MQTT Control Project
+# IR Sensor Monitoring and LED Control with ESP32 & MQTT
 
 ## 📡 Description
 
